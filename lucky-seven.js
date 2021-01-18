@@ -12,13 +12,15 @@
 
 // for loop way
 
-const arr = [1, 2, 4, 3]
+const arr = [1, 2, 4, 3, 7, 8]
 
-const luckySeven = (arr) => {
+function luckySeven() {
   for (let i = 2; i < arr.length; i++) {
     if (arr[i] + arr[i - 1] + arr[i - 2] === 7) {
       return true
     }
   }
   return false
+
 }
+console.log(luckySeven())
